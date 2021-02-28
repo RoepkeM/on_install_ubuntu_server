@@ -25,7 +25,7 @@ touch /home/bin/on_start.sh
 echo "#!/bin/sh" >> /home/bin/on_start.sh
 echo "#this script will run on star up" >> /home/bin/on_start.sh
 echo "#add Go to the PATH on start" >> /home/bin/on_start.sh
-echo "export PATH=$PATH:/usr/local/go/bin" >> /home/bin/on_start.sh
+echo "export PATH=\$PATH:/usr/local/go/bin" >> /home/bin/on_start.sh
 
 #end of on_start.sh
 echo "The on_start.sh is set"
