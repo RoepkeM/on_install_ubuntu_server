@@ -10,22 +10,13 @@ then
   exit 1
 fi
 
-#Setting up on_start.sh
+#Setting up Go on he path
 #Backing up .bashrc
 cp ~/.bashrc ~/.bashrc.copy
 
-#Including the on_start.sh to ~/.bashrc  
-echo "#on start run on_start.sh" >> ~/.bashrc
-echo "sh /home/bin/on_start.sh" >> ~/.bashrc
-
-#Creating the on_start.sh file on /home/bin/
-mkdir /home/bin
-touch /home/bin/on_start.sh
-#Filling the information for on_start.sh 
-echo "#!/bin/sh" >> /home/bin/on_start.sh
-echo "#this script will run on star up" >> /home/bin/on_start.sh
-echo "#add Go to the PATH on start" >> /home/bin/on_start.sh
-echo "export PATH=\$PATH:/usr/local/go/bin" >> /home/bin/on_start.sh
+#Including Go on the path  
+echo "#init Go on path" >> ~/.bashrc
+echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc
 
 #end of on_start.sh
 echo "The on_start.sh is set"
