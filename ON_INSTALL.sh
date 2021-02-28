@@ -16,7 +16,7 @@ cp ~/.bashrc ~/.bashrc.copy
 
 #Including the on_start.sh to ~/.bashrc  
 echo "#on start run on_start.sh" >> ~/.bashrc
-echo "sh .//home/bin/on_start.sh" >> ~/.bashrc
+echo "sh /home/bin/on_start.sh" >> ~/.bashrc
 
 #Creating the on_start.sh file on /home/bin/
 mkdir /home/bin
