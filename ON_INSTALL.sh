@@ -15,7 +15,7 @@ fi
 cp ~/.bashrc ~/.bashrc.copy
 
 #Including the on_start.sh to ~/.bashrc  
-echo "echo #on start run on_start.sh" >> ~/.bashrc
+echo "#on start run on_start.sh" >> ~/.bashrc
 echo "sh .//home/bin/on_start.sh" >> ~/.bashrc
 
 #Creating the on_start.sh file on /home/bin/
@@ -49,3 +49,4 @@ echo "Go has being install"
 echo "Installing Node.js"
 apt install nodejs
 
+echo "you have to reboot the system"
