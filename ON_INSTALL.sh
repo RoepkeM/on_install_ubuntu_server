@@ -10,9 +10,7 @@ then
   exit 1
 fi
 
-
 #Setting up on_start.sh
-
 #Backing up .bashrc
 cp ~/.bashrc ~/.bashrc.copy
 
@@ -50,7 +48,4 @@ echo "Go has being install"
 #--->> Installing node.js
 echo "Installing Node.js"
 apt install nodejs
-
-
-
 
