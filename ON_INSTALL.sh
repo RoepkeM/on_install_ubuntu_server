@@ -16,8 +16,8 @@ cp ~/.bashrc ~/.bashrc.copy
 
 #Including Go on the path  
 echo "#init Go on path" >> ~/.bashrc
-echo "export GOPATH=\$HOME/go"
-echo "export PATH=\$PATH:/usr/local/go/bin:$GOPATH/bin" >> ~/.bashrc
+echo "export GOPATH=\$HOME/go" >> ~/.bashrc
+echo "export PATH=\$PATH:/usr/local/go/bin:\$GOPATH/bin" >> ~/.bashrc
 
 #end of on_start.sh
 echo "The on_start.sh is set"
