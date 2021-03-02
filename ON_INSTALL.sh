@@ -41,4 +41,7 @@ echo "Go has being install"
 echo "Installing Node.js"
 apt install nodejs
 
+#--->> Installing gcc
+echo "Install GCC"
+apt install gcc
 echo "you have to reboot the system"
